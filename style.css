@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    margin-left: 50%;
+    color: chocolate;
+}
+
+h2 {
+    text-align: center;
+    text-shadow: 1px 1px 8px whitesmoke;
+    text-decoration-line: underline;
+    text-decoration-color: #d3a8e3;
+}
+
+label {
+    font-size: small;
+}
+
+#titre{
+    width: 80%
+}
+
+#cadre {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 80%;
+    background-color: aquamarine;
+    margin: auto;
+
+}
+
+#depense {
+    padding: 2%;
+}
+
+#recette {
+    padding: 2%;
+}
+
+#epargne {
+    padding: 2%;
+}
+
+#resultat {
+    padding: 2%;
+}
+
+
+button {
+    background-color: #d3a8e3;
+    border-radius: 10%;
+    padding: 1%;
+}
+
+@media screen and (max-width: 800px){
+    #cadre {
+        flex-direction: column;
+        margin: initial;
+    }
+}

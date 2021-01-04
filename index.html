@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="titre">
+        <h1>calcul du budget mensuel</h1>
+    </div>
+    <div id="cadre">
+
+        <div id="depense"><h2>DEPENSE</h2>
+            <ul id="divDep">
+                <label for="loyer">loyer et charge</label><br>
+                <input class="depense" id="loyer" type="number"><br>
+                <label for="remboursement">remboursement credit</label><br>
+                <input class="depense" id="remboursement" type="number"><br>
+                <label for="facture">eau/electricite/gaz</label><br>
+                <input class="depense" id="facture" type="number"><br>
+                <label for="tel">telephone</label><br>
+                <input class="depense" id="tel" type="number"><br>
+                <label for="assuranceMaison">assurance habitation</label><br>
+                <input class="depense" id="assuranceMaison" type="number"><br>
+                <label for="assuranceVoiture">assurance voiture</label><br>
+                <input class="depense" id="assuranceVoiture" type="number"><br>
+                <label for="mutuelle">mutuelle sante</label><br>
+                <input class="depense" id="mutuelle" type="number"><br>
+                <label for="frais">frais de garde</label><br>
+                <input class="depense" id="frais" type="number"><br>
+                <label for="impot">impot sur le revenu</label><br>
+                <input class="depense" id="impot" type="number"><br>
+                <label for="impotLocaux">impot locaux</label><br>
+                <input class="depense" id="impotLocaux" type="number"><br>
+                <label for="courses">courses</label><br>
+                <input class="depense" id="courses" type="number"><br>
+                <label for="essence">essence</label><br>
+                <input class="depense" id="essence" type="number"><br>
+                <label for="activite">activité sportive</label><br>
+                <input class="depense" id="activite" type="number"><br>
+                <label for="sortie">sortie</label><br>
+                <input class="depense" id="sortie" type="number"><br>
+                <label for="autreDepense">autre depense</label><br>
+                <input class="depense" id="autreDepense" type="number"><br>
+            </ul>
+            <button id="actualiserDepense">actualiser</button><br>
+            <span>total depense du mois :<br>
+                <span id="depenseTotal"></span></span><br>
+            <button id="ajoutDep">ajoutez</button>
+        </div>
+
+        <div id="recette"><h2>RECETTE</h2>
+            <ul id="divRec">
+                <label for="salaire">salaire</label><br>
+                <input class="recette" id="salaire" type="number"><br>
+                <label for="allocation">allocation</label><br>
+                <input class="recette" id="allocation" type="number"><br>
+                <label for="rente">rente</label><br>
+                <input class="recette" id="rente" type="number"><br>
+                <label for="autreRecette">autre recette</label><br>
+                <input class="recette" id="autreRecette" type="number"><br>
+            </ul>
+            <button id="actualiserRecette">actualiser</button><br>
+            <span>total recette du mois :<br>
+            <span id="recetteTotal"></span></span><br>
+            <button id="ajoutRec">ajoutez</button>
+        </div>
+
+        <div id="epargne"><h2>EPARGNE</h2>
+            <ul>
+                <label for="calculEpargne">calcul de l'epargne</label><br>
+                <input id="calculEpargne" type="number"><br>
+            </ul>
+        </div>
+
+        <div id="resultat"><h2>RESULTAT</h2>
+            <ul>
+                <label>situation Globale</label><br>
+                <button id="actualiserSituation">actualiser</button><br>
+                <span>situation du mois :<br>
+                <span id="situationGlobale"></span></span><br>
+                <span id="message"></span>
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
